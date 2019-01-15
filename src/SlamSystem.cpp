@@ -681,7 +681,7 @@ void SlamSystem::para2eigen()
     Vector3d cur_R0 = Utility::R2ypr(Rs[0]);
     ROS_INFO("current R %lf %lf %lf", cur_R0.x(), cur_R0.y(), cur_R0.z());
 
-#if 1
+#if 0
     ROS_ASSERT((origin_P0 - cur_P0).norm() < 1e-6);
     ROS_ASSERT((origin_R0.x() - cur_R0.x()) < 1e-6);
 #endif
